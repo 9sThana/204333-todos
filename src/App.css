@@ -1,0 +1,179 @@
+.app {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.title {
+  width: 100%;
+  height: 10%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #333;
+
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.slot {
+  width: 60%;
+
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slot:nth-child(1),
+.slot:nth-child(3) {
+  height: 100vh;
+  width: 20%;
+  background: #1d3557;
+}
+
+.page {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  width: 90%;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box {
+  width: 70%;
+  max-height: 60%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  transition: 300ms;
+
+  box-shadow: #0000003d 0px 3px 8px;
+}
+
+.input-box {
+  min-width: 100%;
+  min-height: 7vh;
+
+  background: #a8dadc;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.input-box a {
+  width: 10%;
+  height: 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-size: 20px;
+  font-weight: bold;
+
+  transition: 250ms;
+
+  cursor: pointer;
+}
+
+.input-box a:hover {
+  color: #a8dadc;
+  box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px,
+    #0a254059 0px -2px 6px 0px inset;
+}
+
+.input-box input {
+  width: 90%;
+  height: 70%;
+
+  padding: 5px 10px;
+  border: none;
+}
+
+.input-box input:focus {
+  outline: none !important;
+}
+
+.new-todo {
+  min-width: 100%;
+  min-height: 5vh;
+
+  background: #333;
+  color: #fff;
+
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+
+  cursor: pointer;
+}
+
+.new-todo:hover {
+  color: #a8dadc;
+}
+
+.todo-list {
+  width: 100%;
+  max-height: 100%;
+
+  overflow-y: auto;
+  background: #f1faee;
+}
+
+.todo-list .lists {
+  height: 7vh;
+  min-width: fit-content;
+  padding: 5px 10px;
+  border-bottom: 2px solid #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.todo-list .lists .items {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+}
+
+.todo-list .lists .items p {
+  padding: 5px;
+  text-align: center;
+}
+
+.todo-list .lists .items .time {
+  background: #333;
+  color: #fff;
+}
+
+.loading {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100%;
+
+  background: #3333339f;
+  top: 0;
+}
